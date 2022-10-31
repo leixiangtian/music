@@ -1,0 +1,78 @@
+.container {
+
+		// 头部
+		.nav-head {
+			display: flex;
+			margin-top: 30rpx;
+
+
+			.title {
+				flex: 1;
+				font-size: 36rpx;
+				font-weight: bold;
+			}
+
+			.more {
+				font-size: 26rpx;
+				line-height: 46rpx;
+				padding: 0rpx 10rpx 0 20rpx;
+				border: 3rpx solid #2C2F40;
+				border-radius: 30rpx;
+				// padding: 10rpx;
+			}
+		}
+
+		// 滚动列表
+		.scroll-view {
+			display: flex;
+			width: calc(100% + 60rpx);
+			margin-left: -30rpx;
+			height: 320rpx;
+
+			.rec-song-item {
+				// flex-direction: row;
+				width: 220rpx;
+				height: 100%;
+				margin: 20rpx 0rpx 20rpx 20rpx;
+
+				image {
+					width: 220rpx;
+					height: 220rpx;
+					border-radius: 10rpx;
+				}
+
+				text {
+					font-size: 25rpx;
+					height: 80rpx;
+					display: block;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					-webkit-box-orient: vertical;
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					text-overflow: ellipsis;
+				}
+			}
+
+			.rec-song-item:last-child {
+				padding-right: 20rpx;
+			}
+
+			/*#ifdef H5*/
+			/deep/ .uni-scroll-view-content {
+				display: flex;
+			}
+
+			/* 去除滚动条 */
+			::-webkit-scrollbar {
+				display: none;
+				width: 0;
+				height: 0;
+				color: transparent;
+			}
+
+			/*#endif*/
+
+		}
+
+	}
