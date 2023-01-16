@@ -9,7 +9,7 @@
 				},
 				"navigationBarBackgroundColor": "#faf3ed", // 背景色
 				"backgroundColor": "#faf3ed",
-				"navigationBarTextStyle": "black", //状态栏字体颜色
+				"navigationBarTextStyle": "black", // 状态栏字体颜色
 				"enablePullDownRefresh": false
 			}
 		}, {
@@ -17,7 +17,7 @@
 			"style": {
 				"navigationBarTitleText": "个人中心",
 				"navigationBarBackgroundColor": "#faf3ed", // 背景色
-				"navigationBarTextStyle": "black", //状态栏字体颜色
+				"navigationBarTextStyle": "black", // 状态栏字体颜色
 				"enablePullDownRefresh": false
 			}
 
@@ -29,6 +29,13 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "歌曲列表",
+				"navigationBarBackgroundColor": "#faf3ed", // 背景色
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {

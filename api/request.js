@@ -128,4 +128,15 @@ export default {
 			data: data
 		});
 	},
+	/*
+	 * 搜索歌曲
+	 * 必选参数 : keywords : 关键词
+	 */
+	getSearchSong(data) {
+		return ApiConfig({
+			method: 'get',
+			url: apiUrl.getSearchSong,
+			data: data
+		});
+	},
 }

@@ -15,15 +15,30 @@
 	}
 
 	// 默认头部
-	.header {
+	.header, .header-fixed {
 		display: flex;
-		margin: 20rpx 0 30rpx 0;
+		// 固定吸顶
+		position: fixed;
+		/* #ifdef H5 */
+		margin: 20rpx 0rpx 30rpx 0rpx;
+		top: 65rpx;
+    /* #endif */
+		/* #ifdef MP-WEIXIN */
+		margin: -1rpx 0rpx 30rpx 0rpx;
+		top: 0rpx;
+    /* #endif */
+		padding-bottom: 20rpx;
+		left: 0rpx;
+		width: calc(100%);
+		z-index: 100;
+		background-color: #faf3ed;
 		
 		.search {
 			display: flex;
 			flex-grow: 1;
 			background-color: #e4e8d9;
 			padding: 0 20rpx;
+			margin: 0 25rpx;
 			font-size: 26rpx;
 			text-align: left;
 			line-height: 60rpx;
@@ -61,10 +76,12 @@
 			}
 		}
 	}
+
 	// banner
 	.banner {
 		width: calc(100% + 60rpx);
 		margin-left: -30rpx;
+		margin-top: 90rpx;
 		// overflow: hidden;
 	
 		.swiper {

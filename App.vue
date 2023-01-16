@@ -17,6 +17,7 @@
 	@import '~@/static/iconfont/iconfont.css';
 	page {
 		/* background-image: url(/static/logo.png); */
-		background-color: #f6f3e8;
+		/* background-color: #f6f3e8; */
+		background-color: transparent;
 	}
 </style>

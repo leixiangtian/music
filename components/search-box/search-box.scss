@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  // 固定吸顶
+  position: fixed;
+  /* #ifdef H5 */
+  margin: 20rpx 0rpx 30rpx 0rpx;
+  top: 67rpx;
+  /* #endif */
+  /* #ifdef MP-WEIXIN */
+  margin: -1rpx 0rpx 30rpx 0rpx;
+  top: 0rpx;
+  /* #endif */
+  left: 0rpx;
+  width: calc(100%);
+  z-index: 100;
+  background-color: #faf3ed;
+  
+  .search {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    background-color: #e4e8d9;
+    padding: 0 20rpx;
+    margin: 0 25rpx;
+    margin-right: 0;
+    font-size: 26rpx;
+    text-align: left;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    // box-shadow: 0 4rpx 15rpx -2rpx;
+    
+    .search-word {
+      margin-left: 15rpx;
+      flex: 1;
+      height: 60rpx;
+      font-size: 26rpx;
+      
+      .search-content {
+        color: #9799a0;
+        margin-left: 18rpx;
+      }
+    }
+
+    .clear {
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .search-input {
+    height: 60rpx;
+    padding: 0 20rpx;
+    line-height: 60rpx;
+    font-size: 26rpx !important;
+    font-weight: 800;
+  }
+  
+  .user {
+    width: 60rpx;
+    height: 60rpx;
+    text-align: center;
+    line-height: 70rpx;
+    background-color: #bbb;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 25rpx;
+    // box-shadow: 0 4rpx 10rpx -2rpx;
+    
+    .icon-morentouxiang {
+      font-size: 45rpx;
+      color: #fff;
+      position: relative;
+      bottom: -1rpx;
+    }
+  }
+}
